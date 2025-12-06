@@ -2,7 +2,7 @@
 
 ## About
 
-Gudauri Kids club is a day care facility located near the Gudauri Ski Resort in the Repbulic of Georgia.
+Gudauri Kids club is a day care facility located near the Gudauri Ski Resort in the Republic of Georgia.
 Visit the website at https://gudaurikidsclub.com
 
 
