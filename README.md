@@ -13,3 +13,5 @@ This repo is intended for CI/CD purposes.
 The website is hosted on CloudFlare and creating a Pull Request will deploy a preview of the changes for testing.
 
 Merging the Pull Request will deploy changes to production (https://gudaurikidsclub.coms)
+
+It is deployed using CloudFlare workers.
