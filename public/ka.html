@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ka">
 <head>
@@ -171,7 +169,7 @@
     }
     </script>
   <link rel="icon" type="image/png" href="https://cdn.breba.app/maya/3e69854a8d844cd787b0a2f6f040af74/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700;800&family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --main-bg: #f9f5ef;
@@ -420,7 +418,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding: 80px 80px 64px 80px;
+      padding: 20px 20px 20px 40px;
       position: relative;
       z-index: 2;
       width: 60vw;
@@ -430,8 +428,9 @@
     }
     .hero__content {
       width: 100%;
-      max-width: 540px;
-      margin: 0 auto;
+      max-width: 600px;
+      /* Remove margin for large viewports, rely on padding from .hero__right */
+      margin: 0;
       display: flex;
       flex-direction: column;
       gap: 32px;
@@ -439,9 +438,9 @@
     }
     .hero__title {
       font-family: 'Fredoka', Arial, sans-serif;
-      font-size: 3.75rem;
+      font-size: 2.2rem;
       color: var(--text-dark);
-      font-weight: 700;
+      font-weight: 800;
       margin: 0 0 12px 0;
       line-height: 1.13;
       letter-spacing: -0.01em;
@@ -505,7 +504,7 @@
       border-collapse: separate;
       border-spacing: 0 6px;
       margin: 0;
-      font-size: 1.08rem;
+      font-size: 1rem;
       min-width: 340px;
       table-layout: fixed;
       box-sizing: border-box;
@@ -514,7 +513,7 @@
     .pricing-card th, .pricing-card td {
       padding: 6px 10px;
       text-align: left;
-      font-size: 1.08rem;
+      font-size: 1rem;
       box-sizing: border-box;
       max-width: 160px;
       overflow-wrap: break-word;
@@ -557,6 +556,14 @@
     .pricing-card .note.important {
       color: var(--text-dark);
       font-weight: 500;
+    }
+    .pricing-card .note--pink {
+      color: #f06292;
+      font-weight: 500;
+    }
+    .pricing-card .note--price {
+      color: var(--cta-green);
+      font-weight: 700;
     }
     /* CTA Buttons */
     .hero__ctas {
@@ -1269,6 +1276,7 @@
       .hero__content {
         max-width: 100vw;
         align-items: center;
+        margin: 0 auto;
       }
       .footer-hero__img, .footer-hero {
         height: 220px;
@@ -1423,7 +1431,7 @@
       .pricing-card .pricing-table td, .pricing-card .pricing-table th {
         white-space: normal;
         padding: 6px 10px;
-        font-size: 0.98rem;
+        font-size: 1rem;
         max-width: 160px;
         overflow-wrap: break-word;
         word-break: break-word;
@@ -1515,14 +1523,9 @@
           <table class="pricing-table" aria-label="ფასების ცხრილი">
             <tbody>
               <tr>
-                <td class="type" style="padding-left:0;">ბავშვები (1.8 წელზე უფროსი)</td>
-                <td class="time">– 1 საათი</td>
+                <td class="type" style="padding-left:0;">პატარები (18+ თვე)</td>
+                <td class="time">1 საათი</td>
                 <td class="price">40 ლარი</td>
-              </tr>
-              <tr>
-                <td class="type" style="padding-left:0;">ჩვილები (1.8 წლამდე)</td>
-                <td class="time">– 1 საათი</td>
-                <td class="price">60 ლარი</td>
               </tr>
               <tr>
                 <td class="type" style="padding-left:0;">სრული დღე</td>
@@ -1541,8 +1544,8 @@
             </tbody>
           </table>
           </div>
-          <div class="note">ყველა პაკეტში შედის მსუბუქი კვება და 1 საათი გარე აქტივობები.</div>
-          <div class="note">საღამოს მოვლა შესაძლებელია მოთხოვნით.</div>
+          <div class="note note--price">ყველა პაკეტში შედის მსუბუქი კვება და 1 საათი გარე აქტივობები.</div>
+          <div class="note note--pink">ჩვილები (&lt;18 თვე) 80 ლარი/საათი</div>
         </div>
         <div class="hero__ctas hero__ctas--center">
           <a class="cta-btn cta-btn--whatsapp" href="https://wa.me/995511529933" target="_blank" rel="noopener" aria-label="დარეკეთ WhatsApp-ზე">
