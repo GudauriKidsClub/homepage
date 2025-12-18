@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ka">
 <head>
@@ -648,6 +649,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .section--light {
+      background: #fff;
+    }
+    .section--creamy {
+      background: var(--main-bg);
     }
     .section__title {
       font-family: 'Fredoka', Arial, sans-serif;
@@ -1626,10 +1633,60 @@
       </div>
     </div>
   </section>
+  <!-- Contact Section (Two Column) - moved just below hero -->
+  <section class="contact-section scroll-offset" id="contact-section">
+    <div class="contact-container">
+      <div class="contact-col contact-col--right">
+        <div class="contact-heading-row">
+          <h2 class="contact-heading section__title">დაგვიკავშირდით</h2>
+          <div class="contact-social">
+            <a href="https://www.facebook.com/GudauriKidsClub/" target="_blank" rel="noopener" aria-label="გუდაურის ბავშვთა კლუბი Facebook-ზე">
+              <img src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/assets/Facebook_Logo_Primary.png" alt="ფეისბუქი" class="social-icon" loading="lazy" />
+            </a>
+            <a href="https://www.instagram.com/reel/DGNB25uM65a/" target="_blank" rel="noopener" aria-label="გუდაურის ბავშვთა კლუბი Instagram-ზე">
+              <img src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/assets/Instagram_Glyph_Gradient.png" alt="ინსტაგრამი" class="social-icon" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="hero__desc contact-helper">გაქვთ კითხვები ან გსურთ დაჯავშნა? დაგვიკავშირდით!</div>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="contact-label">ტელეფონი:</span>
+            <a href="tel:+995511529933" class="contact-link" aria-label="დარეკეთ +995 511 529 933">+995 511 529 933</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-label">Email:</span>
+            <a href="mailto:gudaurikidsclubhost@gmail.com" class="contact-link" aria-label="Email Gudauri Kids Club">gudaurikidsclubhost@gmail.com</a>
+          </div>
+          <div class="contact-detail contact-detail--address">
+            <span class="contact-label">მისამართი:</span>
+            <span class="contact-address">ახალი გუდაური, ATRIUM აპარტამენტი #140, 1-ლი სართული</span>
+          </div>
+        </div>
+        <div class="contact-ctas contact-ctas-center">
+          <a class="cta-btn cta-btn--whatsapp" href="https://wa.me/995511529933" target="_blank" rel="noopener" aria-label="დაგვიკავშირდით და დაჯავშნეთ">
+            <img src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/WhatsAppGlyph.svg" alt="" width="22" height="22" class="cta-icon" loading="lazy">
+            დაგვიკავშირდით და დაჯავშნეთ
+          </a>
+        </div>
+      </div>
+      <div class="contact-col contact-col--left">
+        <div class="contact-map-card">
+          <iframe
+            title="Gudauri Kids Club Location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.6415560992207!2d44.49213037852738!3d42.47193427125291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404529db080808a7%3A0x6528d91e02d4e4ed!2sNew%20Gudauri%20Atrium%20Apartments%20-%20Apart%20Gudauri%20LLC!5e0!3m2!1sen!2sus!4v1763581253949!5m2!1sen!2sus"
+            width="100%" height="320" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Main Content -->
   <main>
     <!-- Section: A day full of discoveries and fun! -->
-    <section class="section scroll-offset" id="dayfun">
+    <section class="section section--creamy scroll-offset" id="dayfun">
       <h2 class="section__title">დღე სავსე აღმოჩენებით და მხიარულებით!</h2>
       <div class="section__subtitle">ყოველი დღე სავსეა თამაშებით, ისტორიებით და ახალი მეგობრებით უსაფრთხო, მზრუნველ გარემოში.</div>
       <div class="cards-row">
@@ -1673,7 +1730,7 @@
       </div>
     </section>
     <!-- About Us (Two Column) -->
-    <section class="aboutus-section scroll-offset" id="aboutus">
+    <section class="aboutus-section section--light scroll-offset" id="aboutus">
       <div class="aboutus__col-left">
         <div class="aboutus__heading">ჩვენ შესახებ</div>
         <div class="aboutus__text">
@@ -1685,7 +1742,7 @@
       </div>
     </section>
     <!-- FAQ (Two Column) -->
-    <section class="faq-section scroll-offset" id="faq">
+    <section class="faq-section section--creamy scroll-offset" id="faq">
       <div class="faq__col-left">
         <img class="faq__img" src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/FAQSection.png" alt="ხშირად დასმული კითხვები – გუდაურის ბავშვთა კლუბი" loading="lazy" width="420" height="320">
       </div>
@@ -1717,55 +1774,7 @@
       </div>
     </section>
     <!-- Contact Section (Two Column) -->
-    <section class="contact-section scroll-offset" id="contact-section">
-      <div class="contact-container">
-        <div class="contact-col contact-col--right">
-          <div class="contact-heading-row">
-            <h2 class="contact-heading section__title" style="margin-bottom:0;">დაგვიკავშირდით</h2>
-            <div class="contact-social">
-              <a href="https://www.facebook.com/GudauriKidsClub/" target="_blank" rel="noopener" aria-label="გუდაურის ბავშვთა კლუბი Facebook-ზე">
-                <img src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/assets/Facebook_Logo_Primary.png" alt="ფეისბუქი" class="social-icon" loading="lazy" />
-              </a>
-              <a href="https://www.instagram.com/reel/DGNB25uM65a/" target="_blank" rel="noopener" aria-label="გუდაურის ბავშვთა კლუბი Instagram-ზე">
-                <img src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/assets/Instagram_Glyph_Gradient.png" alt="ინსტაგრამი" class="social-icon" loading="lazy" />
-              </a>
-            </div>
-          </div>
-          <div class="hero__desc contact-helper">გაქვთ კითხვები ან გსურთ დაჯავშნა? დაგვიკავშირდით!</div>
-          <div class="contact-details">
-            <div class="contact-detail">
-              <span class="contact-label">ტელეფონი:</span>
-              <a href="tel:+995511529933" class="contact-link" aria-label="დარეკეთ +995 511 529 933">+995 511 529 933</a>
-            </div>
-            <div class="contact-detail">
-              <span class="contact-label">Email:</span>
-              <a href="mailto:gudaurikidsclubhost@gmail.com" class="contact-link" aria-label="Email Gudauri Kids Club">gudaurikidsclubhost@gmail.com</a>
-            </div>
-            <div class="contact-detail contact-detail--address">
-              <span class="contact-label">მისამართი:</span>
-              <span class="contact-address">ახალი გუდაური, ATRIUM აპარტამენტი #140, 1-ლი სართული</span>
-            </div>
-          </div>
-          <div class="contact-ctas contact-ctas-center">
-            <a class="cta-btn cta-btn--whatsapp" href="https://wa.me/995511529933" target="_blank" rel="noopener" aria-label="დაგვიკავშირდით და დაჯავშნეთ">
-              <img src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/WhatsAppGlyph.svg" alt="" width="22" height="22" class="cta-icon" loading="lazy">
-              დაგვიკავშირდით და დაჯავშნეთ
-            </a>
-          </div>
-        </div>
-        <div class="contact-col contact-col--left">
-          <div class="contact-map-card">
-            <iframe
-              title="Gudauri Kids Club Location"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.6415560992207!2d44.49213037852738!3d42.47193427125291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404529db080808a7%3A0x6528d91e02d4e4ed!2sNew%20Gudauri%20Atrium%20Apartments%20-%20Apart%20Gudauri%20LLC!5e0!3m2!1sen!2sus!4v1763581253949!5m2!1sen!2sus"
-              width="100%" height="320" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Contact section moved above, this section removed to avoid duplication -->
     <!-- Footer Hero -->
     <section class="footer-hero">
       <img class="footer-hero__img" src="https://cdn.breba.app/maya/457f209d-bcc5-41f7-803a-c1ba0880f949/footer_hero.jpg" alt="Footer Hero – გუდაურის ბავშვთა კლუბი" loading="lazy" width="1200" height="320">
